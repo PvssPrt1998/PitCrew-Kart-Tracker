@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="EmployeeCoreData" representedClassName=".EmployeeCoreData" syncable="YES">
+        <attribute name="employeeName" optional="YES" attributeType="String"/>
+        <attribute name="position" optional="YES" attributeType="String"/>
+        <attribute name="workingHours" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="KartCoreData" representedClassName=".KartCoreData" syncable="YES">
+        <attribute name="maxSpeed" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pic" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="KartingPlaceCoreData" representedClassName=".KartingPlaceCoreData" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="pic" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="RepairCoreData" representedClassName=".RepairCoreData" syncable="YES">
+        <attribute name="cost" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="RepairTotalCostCoreData" representedClassName=".RepairTotalCostCoreData" syncable="YES">
+        <attribute name="totalCost" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+</model>

@@ -252,7 +252,7 @@ final class DataManager: ObservableObject {
             karting()
         }
     }
-    
+    //
     private func couldShowWebViewByDate(lastDate: Date) -> Bool {
         lastDate <= Date()
     }

@@ -7,7 +7,7 @@ struct UserOnboardingTabView: View {
     init(viewModel: UserOnboardingViewModel) {
         self.viewModel = viewModel
         UIScrollView.appearance().bounces = false
-    }
+    }//
     
     var body: some View {
         ZStack {

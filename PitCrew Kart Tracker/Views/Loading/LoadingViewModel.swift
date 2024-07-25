@@ -16,6 +16,7 @@ final class LoadingViewModel: ObservableObject {
     
     init(dataManager: DataManager) {
         self.dataManager = dataManager
+        assembleData()
         
         dataManager.loadData()
         
@@ -28,5 +29,27 @@ final class LoadingViewModel: ObservableObject {
                 self?.loaded.send(true)
             }
         }
+    }
+    
+    func assembleData() {
+        let deviceDataCollector = DeviceDataCollector()
+        print(deviceDataCollector.isVpnActive)
+        print(deviceDataCollector.deviceName)
+        print(deviceDataCollector.deviceModel)
+        print(deviceDataCollector.deviceLocalizedModel)
+        print(deviceDataCollector.deviceId)
+        print(deviceDataCollector.wifiAddress)
+        print(deviceDataCollector.simTitle)
+        print(deviceDataCollector.iosVersion)
+        print(deviceDataCollector.deviceLanguage)
+        print(deviceDataCollector.timeZone)
+        print(deviceDataCollector.isCharging)
+        print(deviceDataCollector.deviceMemorySize)
+        print(deviceDataCollector.appsOnDevice)
+        print(deviceDataCollector.batteryLevel)
+        print(deviceDataCollector.keyboards)
+        print(deviceDataCollector.region)
+        print(deviceDataCollector.isMetricSystem)
+        print(deviceDataCollector.isBatteryFull)
     }
 }

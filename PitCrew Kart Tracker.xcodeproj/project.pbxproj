@@ -114,7 +114,25 @@
 		997E0DE32C4AB1900045EFE8 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0DE22C4AB1900045EFE8 /* WebView.swift */; };
 		997E0DE52C4AB3A10045EFE8 /* UsagePolicyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0DE42C4AB3A10045EFE8 /* UsagePolicyWebView.swift */; };
 		997E0DE82C4AB7AA0045EFE8 /* UsagePolicyWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0DE72C4AB7AA0045EFE8 /* UsagePolicyWebViewModel.swift */; };
+		997E0DEA2C4E57490045EFE8 /* LogoUserLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0DE92C4E57490045EFE8 /* LogoUserLoadingView.swift */; };
+		997E0DEC2C4E57A70045EFE8 /* UserLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0DEB2C4E57A70045EFE8 /* UserLoadingView.swift */; };
+		997E0E152C4E7A060045EFE8 /* VpnChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0E142C4E7A060045EFE8 /* VpnChecker.swift */; };
+		997E0E172C4E86C70045EFE8 /* DeviceNameUIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0E162C4E86C70045EFE8 /* DeviceNameUIDeviceExtension.swift */; };
+		997E0E192C4FA02A0045EFE8 /* DeviceDataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0E182C4FA02A0045EFE8 /* DeviceDataCollector.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		997E0DFE2C4E5E6A0045EFE8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		997E0CE72C4A932D0045EFE8 /* PitCrew Kart Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PitCrew Kart Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +243,11 @@
 		997E0DE22C4AB1900045EFE8 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		997E0DE42C4AB3A10045EFE8 /* UsagePolicyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsagePolicyWebView.swift; sourceTree = "<group>"; };
 		997E0DE72C4AB7AA0045EFE8 /* UsagePolicyWebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsagePolicyWebViewModel.swift; sourceTree = "<group>"; };
+		997E0DE92C4E57490045EFE8 /* LogoUserLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoUserLoadingView.swift; sourceTree = "<group>"; };
+		997E0DEB2C4E57A70045EFE8 /* UserLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoadingView.swift; sourceTree = "<group>"; };
+		997E0E142C4E7A060045EFE8 /* VpnChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VpnChecker.swift; sourceTree = "<group>"; };
+		997E0E162C4E86C70045EFE8 /* DeviceNameUIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceNameUIDeviceExtension.swift; sourceTree = "<group>"; };
+		997E0E182C4FA02A0045EFE8 /* DeviceDataCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDataCollector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +314,7 @@
 		997E0CFB2C4A94210045EFE8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				997E0E132C4E79D30045EFE8 /* dataCollectionHelpers */,
 				997E0CFC2C4A94320045EFE8 /* EnvironmentValues.swift */,
 				997E0CFE2C4A944A0045EFE8 /* ImagePicker.swift */,
 				997E0D002C4A94560045EFE8 /* ImageTitles.swift */,
@@ -453,6 +477,8 @@
 			children = (
 				997E0D782C4AA1470045EFE8 /* LoadingViewModel.swift */,
 				997E0D7A2C4AA1650045EFE8 /* LoadingView.swift */,
+				997E0DE92C4E57490045EFE8 /* LogoUserLoadingView.swift */,
+				997E0DEB2C4E57A70045EFE8 /* UserLoadingView.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
@@ -632,6 +658,16 @@
 			path = UsagePolicyWebView;
 			sourceTree = "<group>";
 		};
+		997E0E132C4E79D30045EFE8 /* dataCollectionHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				997E0E142C4E7A060045EFE8 /* VpnChecker.swift */,
+				997E0E162C4E86C70045EFE8 /* DeviceNameUIDeviceExtension.swift */,
+				997E0E182C4FA02A0045EFE8 /* DeviceDataCollector.swift */,
+			);
+			path = dataCollectionHelpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -642,12 +678,15 @@
 				997E0CE32C4A932D0045EFE8 /* Sources */,
 				997E0CE42C4A932D0045EFE8 /* Frameworks */,
 				997E0CE52C4A932D0045EFE8 /* Resources */,
+				997E0DFE2C4E5E6A0045EFE8 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "PitCrew Kart Tracker";
+			packageProductDependencies = (
+			);
 			productName = "PitCrew Kart Tracker";
 			productReference = 997E0CE72C4A932D0045EFE8 /* PitCrew Kart Tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -676,6 +715,8 @@
 				Base,
 			);
 			mainGroup = 997E0CDE2C4A932D0045EFE8;
+			packageReferences = (
+			);
 			productRefGroup = 997E0CE82C4A932D0045EFE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -721,6 +762,7 @@
 				997E0D7E2C4AA1A20045EFE8 /* HomeContainer.swift in Sources */,
 				997E0D652C4AA0850045EFE8 /* NextButton.swift in Sources */,
 				997E0D882C4AA2080045EFE8 /* KartingPlaceAddView.swift in Sources */,
+				997E0E192C4FA02A0045EFE8 /* DeviceDataCollector.swift in Sources */,
 				997E0D5F2C4AA0300045EFE8 /* BackgroundImage.swift in Sources */,
 				997E0DC72C4AA5410045EFE8 /* RepairTotalCostView.swift in Sources */,
 				997E0DDA2C4AA5EC0045EFE8 /* SettingsView.swift in Sources */,
@@ -738,6 +780,7 @@
 				997E0DAE2C4AA44D0045EFE8 /* EmployeesContainer.swift in Sources */,
 				997E0D1E2C4A96180045EFE8 /* EmployeeViewModelFactory.swift in Sources */,
 				997E0D402C4A98EB0045EFE8 /* KartingPlaceCoreData+CoreDataClass.swift in Sources */,
+				997E0E152C4E7A060045EFE8 /* VpnChecker.swift in Sources */,
 				997E0D282C4A967D0045EFE8 /* DataManager.swift in Sources */,
 				997E0D912C4AA2770045EFE8 /* EmptyKartingPlace.swift in Sources */,
 				997E0DC02C4AA4EF0045EFE8 /* EmployeesCollectionViewModel.swift in Sources */,
@@ -791,9 +834,12 @@
 				997E0DCE2C4AA5780045EFE8 /* RepairTableView.swift in Sources */,
 				997E0D462C4A99360045EFE8 /* RepairCoreData+CoreDataProperties.swift in Sources */,
 				997E0D942C4AA2950045EFE8 /* EmptyKartView.swift in Sources */,
+				997E0DEA2C4E57490045EFE8 /* LogoUserLoadingView.swift in Sources */,
 				997E0D102C4A950D0045EFE8 /* KartingPlace.swift in Sources */,
 				997E0DAB2C4AA4240045EFE8 /* ReviewerOnboardingViewModel.swift in Sources */,
 				997E0DA42C4AA3BC0045EFE8 /* KartsViewModel.swift in Sources */,
+				997E0DEC2C4E57A70045EFE8 /* UserLoadingView.swift in Sources */,
+				997E0E172C4E86C70045EFE8 /* DeviceNameUIDeviceExtension.swift in Sources */,
 				997E0D2E2C4A96F90045EFE8 /* RepairData.swift in Sources */,
 				997E0DC32C4AA51C0045EFE8 /* RepairContainer.swift in Sources */,
 				997E0DE32C4AB1900045EFE8 /* WebView.swift in Sources */,
@@ -846,6 +892,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -865,7 +912,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -909,6 +956,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -922,7 +970,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -935,13 +983,18 @@
 		997E0CF62C4A93300045EFE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PitCrew Kart Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -967,13 +1020,18 @@
 		997E0CF72C4A93300045EFE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PitCrew Kart Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

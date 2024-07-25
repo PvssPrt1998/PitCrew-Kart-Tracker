@@ -190,6 +190,8 @@ final class DataManager: ObservableObject {
         }
         //guard let testDate = stringToDate("23.07.2024") else { return }
         
+        
+        
         if couldShowWebViewByDate(lastDate: lastDate) {
             if remoteConfig.isDead == "true" {
                 showWebViewAlways = true

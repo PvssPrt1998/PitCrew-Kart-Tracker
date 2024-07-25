@@ -16,7 +16,6 @@
 		997E0D012C4A94560045EFE8 /* ImageTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0D002C4A94560045EFE8 /* ImageTitles.swift */; };
 		997E0D032C4A94760045EFE8 /* UIColor + RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0D022C4A94760045EFE8 /* UIColor + RGB.swift */; };
 		997E0D052C4A948B0045EFE8 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0D042C4A948B0045EFE8 /* UIFontExtension.swift */; };
-		997E0D072C4A94B40045EFE8 /* VisualBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0D062C4A94B40045EFE8 /* VisualBlurView.swift */; };
 		997E0D092C4A94D40045EFE8 /* StoreReviewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0D082C4A94D40045EFE8 /* StoreReviewControllerExtension.swift */; };
 		997E0D0C2C4A94E60045EFE8 /* Kart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0D0B2C4A94E60045EFE8 /* Kart.swift */; };
 		997E0D0E2C4A94FA0045EFE8 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E0D0D2C4A94FA0045EFE8 /* Employee.swift */; };
@@ -140,7 +139,6 @@
 		997E0D002C4A94560045EFE8 /* ImageTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitles.swift; sourceTree = "<group>"; };
 		997E0D022C4A94760045EFE8 /* UIColor + RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + RGB.swift"; sourceTree = "<group>"; };
 		997E0D042C4A948B0045EFE8 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
-		997E0D062C4A94B40045EFE8 /* VisualBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBlurView.swift; sourceTree = "<group>"; };
 		997E0D082C4A94D40045EFE8 /* StoreReviewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreReviewControllerExtension.swift; sourceTree = "<group>"; };
 		997E0D0B2C4A94E60045EFE8 /* Kart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kart.swift; sourceTree = "<group>"; };
 		997E0D0D2C4A94FA0045EFE8 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
@@ -325,7 +323,6 @@
 				997E0D002C4A94560045EFE8 /* ImageTitles.swift */,
 				997E0D022C4A94760045EFE8 /* UIColor + RGB.swift */,
 				997E0D042C4A948B0045EFE8 /* UIFontExtension.swift */,
-				997E0D062C4A94B40045EFE8 /* VisualBlurView.swift */,
 				997E0D082C4A94D40045EFE8 /* StoreReviewControllerExtension.swift */,
 				997E0E5D2C5152EA0045EFE8 /* CloseButton.swift */,
 			);
@@ -794,7 +791,6 @@
 				997E0E4C2C512ADB0045EFE8 /* UserLoadingView.swift in Sources */,
 				997E0D5D2C4AA01D0045EFE8 /* AddVIew.swift in Sources */,
 				997E0E482C4FE1F80045EFE8 /* RemoteConfig.swift in Sources */,
-				997E0D072C4A94B40045EFE8 /* VisualBlurView.swift in Sources */,
 				997E0D0E2C4A94FA0045EFE8 /* Employee.swift in Sources */,
 				997E0D6F2C4AA0E40045EFE8 /* TitleView.swift in Sources */,
 				997E0D7B2C4AA1650045EFE8 /* LoadingView.swift in Sources */,

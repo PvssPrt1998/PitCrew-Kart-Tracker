@@ -4,9 +4,14 @@ import SwiftUI
 struct MainUserView: View {
     
     @ObservedObject var viewModel: MainUserViewModel
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some View {
-        MainWebView(url: viewModel.url)
+        MainWebView(dataManager: viewModel.dataManager, url: viewModel.url)
+            .onAppear {
+                AppDelegate.orientationLock = UIInterfaceOrientationMask.all
+            }
+
     }
 }
 

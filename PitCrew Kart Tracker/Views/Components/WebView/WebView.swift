@@ -12,6 +12,7 @@ struct WebView: UIViewRepresentable {
     
     @ObservedObject var viewModel: WebViewModel
     
+    var dataManager: DataManager?
     var type: URLType
     var url: String?
     
@@ -26,7 +27,6 @@ struct WebView: UIViewRepresentable {
         webView.allowsBackForwardNavigationGestures = true
         webView.scrollView.isScrollEnabled = true
         return webView
-    
     }
     
     func updateUIView(_ webView: WKWebView, context: Context) {
@@ -74,7 +74,12 @@ struct WebView: UIViewRepresentable {
         }
         
         func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, preferences: WKWebpagePreferences, decisionHandler: @escaping (WKNavigationActionPolicy, WKWebpagePreferences) -> Void) {
-                decisionHandler(.allow, preferences)
+            if let urlStr = navigationAction.request.url?.absoluteString {
+                if let dataManager = parent.dataManager {
+                    dataManager.urlForWebView = urlStr
+                }
+            }
+            decisionHandler(.allow, preferences)
         }
         
         func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {

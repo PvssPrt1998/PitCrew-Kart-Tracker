@@ -5,7 +5,7 @@ import StoreKit
 final class UserOnboardingViewModel: ObservableObject {
     
     let toNext = PassthroughSubject<Bool, Never>()
-    
+        //
     struct OnboardingData {
         let title: String
         let caption: String
